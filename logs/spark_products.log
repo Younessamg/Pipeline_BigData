@@ -1,0 +1,119 @@
+:: loading settings :: url = jar:file:/opt/bitnami/spark/jars/ivy-2.5.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /opt/bitnami/spark/.ivy2/cache
+The jars for the packages stored in: /opt/bitnami/spark/.ivy2/jars
+org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency
+org.postgresql#postgresql added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-b1e3fa37-68ab-4e5f-ae28-cf840cbcdec6;1.0
+	confs: [default]
+	found org.apache.spark#spark-sql-kafka-0-10_2.12;3.1.2 in central
+	found org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.1.2 in central
+	found org.apache.kafka#kafka-clients;2.6.0 in central
+	found com.github.luben#zstd-jni;1.4.8-1 in central
+	found org.lz4#lz4-java;1.7.1 in central
+	found org.xerial.snappy#snappy-java;1.1.8.2 in central
+	found org.slf4j#slf4j-api;1.7.30 in central
+	found org.spark-project.spark#unused;1.0.0 in central
+	found org.apache.commons#commons-pool2;2.6.2 in central
+	found org.postgresql#postgresql;42.3.1 in central
+	found org.checkerframework#checker-qual;3.5.0 in central
+downloading https://repo1.maven.org/maven2/org/apache/spark/spark-sql-kafka-0-10_2.12/3.1.2/spark-sql-kafka-0-10_2.12-3.1.2.jar ...
+	[SUCCESSFUL ] org.apache.spark#spark-sql-kafka-0-10_2.12;3.1.2!spark-sql-kafka-0-10_2.12.jar (12927ms)
+downloading https://repo1.maven.org/maven2/org/postgresql/postgresql/42.3.1/postgresql-42.3.1.jar ...
+	[SUCCESSFUL ] org.postgresql#postgresql;42.3.1!postgresql.jar (28825ms)
+downloading https://repo1.maven.org/maven2/org/apache/spark/spark-token-provider-kafka-0-10_2.12/3.1.2/spark-token-provider-kafka-0-10_2.12-3.1.2.jar ...
+	[SUCCESSFUL ] org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.1.2!spark-token-provider-kafka-0-10_2.12.jar (2261ms)
+downloading https://repo1.maven.org/maven2/org/apache/kafka/kafka-clients/2.6.0/kafka-clients-2.6.0.jar ...
+downloading https://repo1.maven.org/maven2/com/github/luben/zstd-jni/1.4.8-1/zstd-jni-1.4.8-1.jar ...
+downloading https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.8.2/snappy-java-1.1.8.2.jar ...
+:: resolution report :: resolve 15688ms :: artifacts dl 187684ms
+	:: modules in use:
+	com.github.luben#zstd-jni;1.4.8-1 from central in [default]
+	org.apache.commons#commons-pool2;2.6.2 from central in [default]
+	org.apache.kafka#kafka-clients;2.6.0 from central in [default]
+	org.apache.spark#spark-sql-kafka-0-10_2.12;3.1.2 from central in [default]
+	org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.1.2 from central in [default]
+	org.checkerframework#checker-qual;3.5.0 from central in [default]
+	org.lz4#lz4-java;1.7.1 from central in [default]
+	org.postgresql#postgresql;42.3.1 from central in [default]
+	org.slf4j#slf4j-api;1.7.30 from central in [default]
+	org.spark-project.spark#unused;1.0.0 from central in [default]
+	org.xerial.snappy#snappy-java;1.1.8.2 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   11  |   11  |   11  |   0   ||   11  |   3   |
+	---------------------------------------------------------------------
+
+:: problems summary ::
+:::: WARNINGS
+		[FAILED     ] org.apache.kafka#kafka-clients;2.6.0!kafka-clients.jar: Downloaded file size (0) doesn't match expected Content Length (3754508) for https://repo1.maven.org/maven2/org/apache/kafka/kafka-clients/2.6.0/kafka-clients-2.6.0.jar. Please retry. (95340ms)
+
+		[FAILED     ] org.apache.kafka#kafka-clients;2.6.0!kafka-clients.jar: Downloaded file size (0) doesn't match expected Content Length (3754508) for https://repo1.maven.org/maven2/org/apache/kafka/kafka-clients/2.6.0/kafka-clients-2.6.0.jar. Please retry. (95340ms)
+
+	==== central: tried
+
+	  https://repo1.maven.org/maven2/org/apache/kafka/kafka-clients/2.6.0/kafka-clients-2.6.0.jar
+
+		[FAILED     ] com.github.luben#zstd-jni;1.4.8-1!zstd-jni.jar: Downloaded file size (0) doesn't match expected Content Length (6407352) for https://repo1.maven.org/maven2/com/github/luben/zstd-jni/1.4.8-1/zstd-jni-1.4.8-1.jar. Please retry. (37107ms)
+
+		[FAILED     ] com.github.luben#zstd-jni;1.4.8-1!zstd-jni.jar: Downloaded file size (0) doesn't match expected Content Length (6407352) for https://repo1.maven.org/maven2/com/github/luben/zstd-jni/1.4.8-1/zstd-jni-1.4.8-1.jar. Please retry. (37107ms)
+
+	==== central: tried
+
+	  https://repo1.maven.org/maven2/com/github/luben/zstd-jni/1.4.8-1/zstd-jni-1.4.8-1.jar
+
+		[FAILED     ] org.xerial.snappy#snappy-java;1.1.8.2!snappy-java.jar(bundle): Downloaded file size (0) doesn't match expected Content Length (1969177) for https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.8.2/snappy-java-1.1.8.2.jar. Please retry. (11214ms)
+
+		[FAILED     ] org.xerial.snappy#snappy-java;1.1.8.2!snappy-java.jar(bundle): Downloaded file size (0) doesn't match expected Content Length (1969177) for https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.8.2/snappy-java-1.1.8.2.jar. Please retry. (11214ms)
+
+	==== central: tried
+
+	  https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.8.2/snappy-java-1.1.8.2.jar
+
+		::::::::::::::::::::::::::::::::::::::::::::::
+
+		::              FAILED DOWNLOADS            ::
+
+		:: ^ see resolution messages for details  ^ ::
+
+		::::::::::::::::::::::::::::::::::::::::::::::
+
+		:: org.apache.kafka#kafka-clients;2.6.0!kafka-clients.jar
+
+		:: com.github.luben#zstd-jni;1.4.8-1!zstd-jni.jar
+
+		:: org.xerial.snappy#snappy-java;1.1.8.2!snappy-java.jar(bundle)
+
+		::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+:: USE VERBOSE OR DEBUG MESSAGE LEVEL FOR MORE DETAILS
+Exception in thread "main" java.lang.RuntimeException: [download failed: org.apache.kafka#kafka-clients;2.6.0!kafka-clients.jar, download failed: com.github.luben#zstd-jni;1.4.8-1!zstd-jni.jar, download failed: org.xerial.snappy#snappy-java;1.1.8.2!snappy-java.jar(bundle)]
+	at org.apache.spark.deploy.SparkSubmitUtils$.resolveMavenCoordinates(SparkSubmit.scala:1456)
+	at org.apache.spark.util.DependencyUtils$.resolveMavenDependencies(DependencyUtils.scala:185)
+	at org.apache.spark.deploy.SparkSubmit.prepareSubmitEnvironment(SparkSubmit.scala:308)
+	at org.apache.spark.deploy.SparkSubmit.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:901)
+	at org.apache.spark.deploy.SparkSubmit.doRunMain$1(SparkSubmit.scala:180)
+	at org.apache.spark.deploy.SparkSubmit.submit(SparkSubmit.scala:203)
+	at org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:90)
+	at org.apache.spark.deploy.SparkSubmit$$anon$2.doSubmit(SparkSubmit.scala:1046)
+	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:1055)
+	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+Traceback (most recent call last):
+  File "spark_products_processor.py", line 181, in <module>
+    spark = create_spark_session()
+  File "spark_products_processor.py", line 31, in create_spark_session
+    return SparkSession.builder \
+  File "/opt/bitnami/spark/python/pyspark/sql/session.py", line 269, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+  File "/opt/bitnami/spark/python/pyspark/context.py", line 483, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+  File "/opt/bitnami/spark/python/pyspark/context.py", line 195, in __init__
+    SparkContext._ensure_initialized(self, gateway=gateway, conf=conf)
+  File "/opt/bitnami/spark/python/pyspark/context.py", line 417, in _ensure_initialized
+    SparkContext._gateway = gateway or launch_gateway(conf)
+  File "/opt/bitnami/spark/python/pyspark/java_gateway.py", line 106, in launch_gateway
+    raise RuntimeError("Java gateway process exited before sending its port number")
+RuntimeError: Java gateway process exited before sending its port number

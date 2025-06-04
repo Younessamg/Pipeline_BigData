@@ -1,0 +1,18 @@
+Connexion à Kafka établie avec succès
+
+Traitement de la source: fakestore
+Récupération des données depuis https://fakestoreapi.com/users avec paramètres {}
+Envoyé 10 enregistrements au topic fakestore-users
+Récupération des données depuis https://fakestoreapi.com/products avec paramètres {}
+Envoyé 20 enregistrements au topic fakestore-products
+Récupération des données depuis https://fakestoreapi.com/carts avec paramètres {}
+Envoyé 7 enregistrements au topic fakestore-carts
+
+Traitement de la source: dummyjson
+Récupération des données depuis https://dummyjson.com/users avec paramètres {'limit': 100}
+Envoyé 100 enregistrements au topic fakestore-users
+Récupération des données depuis https://dummyjson.com/products avec paramètres {'limit': 100}
+Envoyé 100 enregistrements au topic fakestore-products
+Récupération des données depuis https://dummyjson.com/carts avec paramètres {'limit': 100}
+Envoyé 50 enregistrements au topic fakestore-carts
+Producteur fermé avec succès
